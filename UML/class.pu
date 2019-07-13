@@ -1,0 +1,30 @@
+@startuml ClassDiagram
+
+title Class Diagram
+
+package TitleScene {
+
+}
+package MainScene {
+    class Hand {
+        Gu
+        Choki
+        Pa
+    }
+    class Player {
+        ChooseHand(Hand)
+    }
+    class ComPlayer {
+        ChooseHandRandomly()
+    }
+    Player <|-- ComPlayer
+    Player o-- Hand
+}
+package ResultScene {
+
+}
+
+TitleScene <--> MainScene : 遷移
+MainScene <-->ResultScene : 遷移
+
+@enduml
